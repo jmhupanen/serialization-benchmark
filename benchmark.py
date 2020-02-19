@@ -110,7 +110,7 @@ ax.legend()
 
 fig.tight_layout()
 
-plt.show()
+plt.savefig('speed.png')
 
 # Make file size graph
 labels = ['Pickle', 'XML', 'JSON', 'MessagePack', 'YAML']
@@ -129,4 +129,6 @@ ax.legend().set_visible(False)
 
 fig.tight_layout()
 
-plt.show()
+plt.savefig('size.png')
+
+print("Benchmark executed succesfully! Results are found in 'speed.png' and 'size.png'.")
